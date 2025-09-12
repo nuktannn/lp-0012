@@ -342,23 +342,6 @@ function initScrollTrigger(el) {
   }
 }
 
-//Lenis
-document.addEventListener("DOMContentLoaded", () => {
-  const lenis = new Lenis({
-    duration: 1.5,
-    lerp: 0.1,
-    smoothWheel: true,
-    smoothTouch: true,
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-
-  requestAnimationFrame(raf);
-});
-
 //テキスト左右に動かす
 gsap.to(".fv__bottom-bg", {
   x: 150,
@@ -370,3 +353,4 @@ gsap.to(".fv__bottom-bg", {
     scrub: 0.5,
   },
 });
+
